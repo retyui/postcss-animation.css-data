@@ -1,35 +1,35 @@
 {
-	"name": "postcss-animation.css-data"
-	, "version": "0.0.1"
-	, "main": "index.json"
-	, "scripts": {
-		"debug": "node --inspect --debug-brk parse.js"
-		, "build": "node parse.js"
-	}
-
-	, "license": "ISC"
-	, "devDependencies": {
-		"animate.css": "^3.5.2"
-		, "bluebird": "^3.5.0"
-		, "css": "^2.2.1"
-	}
-	, "description": "PostCSS plugin that adds `@keyframes` from animate.css."
-	, "keywords": [
-		"postcss"
-		, "css"
-		, "postcss-plugin"
-		, "animation"
-		, "keyframes"
-		, "animate.css"
-	]
-	, "license": "MIT"
-	, "repository": {
-		"type": "git"
-		, "url": "https://github.com/retyui/postcss-animation.css-data.git"
-	}
-	, "author": "retyui <vamnemne@gmail.com>"
-	, "bugs": {
-		"url": "https://github.com/retyui/postcss-animation.css-data/issues"
-	}
-	, "homepage": "https://github.com/retyui/postcss-animation.css-data"
+  "name": "postcss-animation.css-data",
+  "version": "0.0.9",
+  "main": "index.json",
+  "scripts": {
+    "debug": "node --inspect --debug-brk parse.js",
+    "build": "node parse.js",
+    "prepublish": "npm run build"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "animate.css": "git+https://github.com/daneden/animate.css.git",
+    "css-parse-keyframes": "^0.0.4"
+  },
+  "description": "Package that adds `@keyframes` from animate.css.",
+  "keywords": [
+    "css",
+    "animation",
+    "keyframes",
+    "animate.css"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/retyui/postcss-animation.css-data.git"
+  },
+  "author": {
+    "name": "David Narbutovich",
+    "email": "vamnemne@gmail.com",
+    "url": "https://github.com/retyui"
+  },
+  "bugs": {
+    "url": "https://github.com/retyui/postcss-animation.css-data/issues"
+  },
+  "homepage": "https://github.com/retyui/postcss-animation.css-data"
 }
