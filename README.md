@@ -45,7 +45,7 @@ postcss(
 ## Regenerate:
 ```bash
 git clone https://github.com/retyui/postcss-animation.css-data
-cd postcss-magic.css-data
+cd postcss-animation.css-data
 npm install
 npm run build
 ```
