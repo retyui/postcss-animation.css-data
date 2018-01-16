@@ -14,21 +14,23 @@ yarn add -D postcss-animation.css-data postcss-animations
 ## Use
 
 ```js
-const           postcss = require('postcss');
-const postcssAnimations = require('postcss-animations');
+const postcss = require("postcss");
+const postcssAnimations = require("postcss-animations");
 
 (async () => {
   const CSS = `.my-jackInTheBox { animation-name: jackInTheBox; }`;
   const PLUGINS = [
     postcssAnimations({
-      data: [require('postcss-animation.css-data')],
+      data: [require("postcss-animation.css-data")],
       checkDuplications: true,
       disableCheckCssVariables: true
     })
   ];
 
   try {
-    const { css, messages } = await postcss(PLUGINS).process(CSS/*, {from,to}*/);
+    const { css, messages } = await postcss(PLUGINS).process(
+      CSS /*, {from,to}*/
+    );
     messages.map(msg => console.log(msg.toString()));
 
     console.log(css);
