@@ -1,35 +1,26 @@
 {
-  "name": "postcss-animation.css-data",
-  "version": "0.1.4",
-  "main": "index.json",
-  "scripts": {
-    "debug": "node --inspect --debug-brk parse.js",
-    "build": "node parse.js",
-    "prepublish": "npm run build"
-  },
-  "license": "MIT",
-  "devDependencies": {
-    "animate.css": "git+https://github.com/daneden/animate.css.git",
-    "css-parse-keyframes": "^0.0.4"
-  },
-  "description": "Package that adds `@keyframes` from animate.css.",
-  "keywords": [
-    "css",
-    "animation",
-    "keyframes",
-    "animate.css"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/retyui/postcss-animation.css-data.git"
-  },
-  "author": {
-    "name": "David Narbutovich",
-    "email": "vamnemne@gmail.com",
-    "url": "https://github.com/retyui"
-  },
-  "bugs": {
-    "url": "https://github.com/retyui/postcss-animation.css-data/issues"
-  },
-  "homepage": "https://github.com/retyui/postcss-animation.css-data"
+	"version": "1.0.0",
+	"name": "postcss-animation.css-data",
+	"description": "Package that adds `@keyframes` from animate.css.",
+	"license": "MIT",
+	"main": "index.json",
+	"files": [],
+	"scripts": {
+		"build": "node parse.js",
+		"prepare": "npm run build"
+	},
+	"peerDependencies": {
+		"postcss-animations": "6.x"
+	},
+	"devDependencies": {
+		"css-parse-keyframes": "^0.0.4",
+		"animate.css": "daneden/animate.css"
+
+	},
+	"keywords": ["css", "animation", "keyframes", "animate.css"],
+	"repository": "https://github.com/retyui/postcss-animation.css-data",
+	"author": "David Narbutovich <vamnemne@gmail.com>",
+	"engines": {
+		"node": ">= 4.2"
+	}
 }
